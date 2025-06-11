@@ -3,6 +3,9 @@
 // Ook importeer ik LiquidJS, een template engine die ik ga gebruiken om HTML te genereren
 import express from 'express'
 import pkg from 'liquidjs'
+import dotenv from 'dotenv'
+dotenv.config()
+console.log(process.env.RIJKSMUSEUM_API_KEY)
 
 const { Liquid } = pkg
 
